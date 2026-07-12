@@ -4,7 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/TrackPlay/',
+  base: process.env.GITHUB_ACTIONS ? '/TrackPlay/' : '/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
