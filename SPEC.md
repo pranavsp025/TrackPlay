@@ -137,6 +137,7 @@ App
   - Bottom navigation bar: Fixed to viewport bottom with high-fidelity glassmorphism, featuring tactile icons (Home, Discover, Library, Profile).
   - Top header is streamlined, displaying only the brand logo and the RAWG mode badge.
   - Search bar in Discover is rendered inline at the top of the tab content to preserve spacing.
+  - **Filter Dropdowns**: Platforms and genres are rendered as select dropdown lists instead of buttons/tabs to prevent horizontal scroll or overflow.
   - Cards in the grid scale down to 1 or 2 columns, and modals span full-width with scrollable contents.
   - Padding bottom of 80px on main container to prevent bottom nav bar overlays.
 

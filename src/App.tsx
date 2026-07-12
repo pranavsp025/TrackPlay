@@ -139,6 +139,11 @@ function App() {
     );
   };
 
+  // Select single platform (mobile dropdown)
+  const handlePlatformSelect = (id: number | null) => {
+    setSelectedPlatforms(id === null ? [] : [id]);
+  };
+
   // Save new API Key
   const handleSaveKey = (key: string) => {
     if (key) {
@@ -223,6 +228,7 @@ function App() {
             <FilterBar
               selectedPlatforms={selectedPlatforms}
               onPlatformToggle={handlePlatformToggle}
+              onPlatformSelect={handlePlatformSelect}
               selectedGenre={selectedGenre}
               onGenreSelect={setSelectedGenre}
               orderBy={orderBy}
