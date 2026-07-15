@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
         <div className={`mode-badge ${isLive ? 'mode-live' : 'mode-mock'}`}>
           <span className="badge-dot"></span>
-          {isLive ? 'Live API Mode' : 'Mock Mode (Demo)'}
+          {isLive ? 'Live' : 'Mock'}
         </div>
       </div>
 
