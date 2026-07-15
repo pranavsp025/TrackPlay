@@ -124,9 +124,19 @@ App
   - Users can change a game's library state or remove it directly from the game card context menu/overlay, or within the detail modal.
 - **Profile Tab**:
   - Renders a personal tracker card (avatar, customizable username, custom tagline/bio).
-  - Visual breakdown of the gaming library (total games, percent completed).
   - Dynamic user settings to edit username, bio, and choose avatar images.
   - Embeds the RAWG API key config for a central settings experience.
+  - **Logbook Dashboard**:
+    - A 2x2 grid of modern stats cards:
+      - **Collected**: Total games in library. Icon: `stack/layers`.
+      - **Beaten**: Total completed games. Icon: `check-circle`.
+      - **Backlog**: Total games in backlog. Icon: `bookmark/ribbon`.
+      - **Playing / Active**: Total currently playing games. Icon: `heartbeat/pulse` or `gamepad`.
+    - **Recent Activity Section**:
+      - Shows a chronological list of recent game acquisitions or updates (based on `addedAt` timestamp from library).
+      - Styled as large, premium glassmorphic background cards using game cover images.
+      - Displays dynamic relative time descriptions (e.g. "Just now", "1 day ago", "5 days ago").
+      - Employs SVGs for activity status lines, status change notifications, and glassmorphic micro-animations.
 
 ### 5.2 Mobile & Desktop Compatibility (Responsive Design)
 - **Desktop Layout**:

@@ -265,6 +265,7 @@ function App() {
             library={library}
             apiKey={apiKey}
             onSaveKey={handleSaveKey}
+            onGameClick={setSelectedGameId}
           />
         );
       default:
